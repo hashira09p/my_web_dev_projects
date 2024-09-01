@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Line Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container{
+      display: grid;
+      width: 748px;
+      height: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      background-color: black;
+      gap: 9px;
+    }
+
+    [class*="no"]{
+      background-color: #F0F1EC;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .yellow{
+      background-color: yellow;
+    }
+
+    .violet{
+      background-color: rgb(6, 6, 62);
+      
+    }
+
+    .none1{
+      grid-column: span 3;
+    }
+
+    .none2{
+      grid-row: span 2;
+    }
+
+    .none3{
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .none4{
+      grid-row: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="red"></div>
+    <div class="none1"></div>
+    <div class="none2"></div>
+    <div class="none3"></div>
+    <div class="blue"></div>
+    <div class="none4"></div>
+    <div class="none5"></div>
+    <div class="yellow"></div>
+    <div class="violet"></div>
+  </div>
+</body>
+
+</html>

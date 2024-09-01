@@ -1,0 +1,113 @@
+body {
+    font-family: 'Sono', sans-serif;
+    background-color: rgb(45, 44, 44);
+}
+
+section{
+    height: 100vh;
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-plan{
+    width: 13rem;
+    height: 23rem;
+    margin: 0px 10px 0px 10px;
+    background-color: rgb(232, 232, 232);
+    border: 0px solid black;
+    border-radius: 20px;
+}
+
+.basic-plan, .standard-plan, .premium-plan{
+    height: 4rem;
+    
+    border: 0px solid black;
+    border-radius: 20px 20px 0px 0px;
+}
+ .basic-plan{
+    background-image: linear-gradient(150deg, yellow,red,rgb(108, 20, 34));
+ }
+
+ .standard-plan{
+    background-image: linear-gradient(150deg, lightblue, rgb(80, 143, 164), rgb(17, 61, 75));
+ }
+
+ .premium-plan{
+    background-image: linear-gradient(150deg, rgb(138, 183, 138),rgb(79, 149, 177),rgb(16, 61, 79));
+ }
+
+.plan-title{
+    width: 10rem;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: relative;
+    left: 1.7rem;
+    top: 1rem;
+}
+
+.plan-price, .month{
+    position: relative;
+    left: 2.3rem;
+    top: 1rem;
+}
+
+.plan-price{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.month{
+    font-size: .7rem;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 1.3rem;
+    font-size: .9rem;
+    width: 170px;
+}
+
+.plan-button1{
+    border: none;
+    background-image: linear-gradient(150deg, yellow,red,rgb(108, 20, 34));
+    font-size: 1.1rem;
+    border-radius: 20px;
+    position: relative;
+    top: 2rem;
+    left: 4rem;
+    color: white;
+}
+
+.plan-button2{
+    border: none;
+    background-image: linear-gradient(150deg, lightblue, rgb(80, 143, 164), rgb(17, 61, 75));
+    position: relative;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    top: .8rem;
+    left: 4rem;
+    color: white;
+}
+
+.plan-button3{
+    border: none;
+    background-image: linear-gradient(150deg, rgb(138, 183, 138),rgb(79, 149, 177),rgb(16, 61, 79));
+    position: relative;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    top: 1.8rem;
+    left: 4rem;
+    color: white;
+}
+
+

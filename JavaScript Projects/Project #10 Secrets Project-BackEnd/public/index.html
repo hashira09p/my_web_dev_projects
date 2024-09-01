@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="secrets"><h1>Secrets</h1></div>
+    
+    <form action="/login" method="POST" class="form">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" class="input" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="input" required>
+        <input type="submit" value="LOGIN" class="submit">
+      </div>
+    </form>
+  </div>
+  
+  <script src="../index.js"></script>
+</body>
+</html>

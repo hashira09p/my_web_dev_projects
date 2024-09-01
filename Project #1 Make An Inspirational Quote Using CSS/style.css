@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dream{
+    width: 25rem;
+    height: 15rem;
+}
+
+.image{
+    width: 25rem;
+    height: 15rem;
+    border: 5px solid white;
+    position: relative;
+    left: 6.9rem;
+    top: 0.5rem;
+}
+
+h1,p{
+    color: white;
+    text-align: center;
+    margin: 16px
+}
+
+.main-container{
+    border: 5px solid white;
+    width: 50%;
+    height: 25rem;
+    
+}
+
+h1{
+    font-family: "Libre Baskerville", serif;
+    text-transform: uppercase;
+}
