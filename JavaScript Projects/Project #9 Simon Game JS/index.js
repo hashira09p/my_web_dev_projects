@@ -7,7 +7,7 @@ var firstSequenceTime = 200;
 
 document.onkeydown = function(){
     document.querySelector("#level-title").innerHTML = `Level ${lvl}`;
-    if(toggle== false){
+    if(toggle == false){
         sequence();
         toggle = true;
     }
