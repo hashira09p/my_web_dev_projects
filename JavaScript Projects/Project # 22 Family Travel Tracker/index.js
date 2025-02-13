@@ -79,14 +79,11 @@ app.post("/add", async (req, res) => {
 
   console.log(result.rows.length);
   try {
-    if (result.rows.length > 0) {
-      res.redirect("/");
-    } else {
-      await db.query("INSERT INTO visited_countries (country_code, user_id) VALUES ($1, $2)", [country_code, currentUserId]);
+    await db.query("INSERT INTO visited_countries (country_code, user_id) VALUES ($1, $2)", [country_code, currentUserId]);
 
-      console.log("success")
-      res.redirect("/");
-    }
+    console.log("success")
+    res.redirect("/");
+
   } catch (err) {
     console.log(err.message);
 
@@ -100,7 +97,7 @@ app.post("/add", async (req, res) => {
       total: countries.length,
       users: users,
       color: await getUserColor(),
-      error: country_code // if the value of this variable is error that it gets to the output of the function countryCode();
+      error: country_code || err.message // if the value of this variable is error that it gets to the output of the function countryCode();
     });
   }
 });
